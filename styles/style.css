@@ -25,10 +25,6 @@
 }
 
 /* Стили страницы */
-* {
-  border: 1px solid red;
-}
-
 .header {
   display: flex;
   background-color: #f2f2f2;
@@ -256,6 +252,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding: 90px 0;
 }
 
 .section-title_theme_dark {
@@ -301,22 +298,55 @@
 }
 
 .footer {
+  background: #1f1f1f;
+  min-height: 350px;
+  display: flex;
 }
 
 .footer__columns {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 60px auto 40px;
 }
 
 .footer__column_content_copyright {
-}
-
-.logo_place_footer {
+  flex-basis: 711px;
+  position: relative;
 }
 
 .footer__author {
+  position: absolute;
+  bottom: 0;
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
-.footer__column_content_info {
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.footer__column_content_social {
+.footer__social-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 16px;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
