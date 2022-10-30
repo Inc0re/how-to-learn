@@ -3,7 +3,11 @@
         transform: rotate(0);
     }
     to {
+<<<<<<< HEAD
         transform: rotate(360deg);
+=======
+        transform: rotate(360deg);;
+>>>>>>> 6388e42ed5a9cd91355aca298a61085c9cfef930
     }
 }
 .rotation {
