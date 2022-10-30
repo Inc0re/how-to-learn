@@ -6,3 +6,8 @@
 .header__link:active {
   color: #ff0000;
 }
+
+.header__link:hover {
+  opacity: 70%;
+  transition: opacity .2s linear;
+}
