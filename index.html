@@ -11,18 +11,18 @@
 <body>
   <div class="page">
     <header class="header">
-      <a href="https://practicum.yandex.ru" class="logo logo_place_header"></a>
+      <a href="https://practicum.yandex.ru" class="logo logo_place_header" target="_blank"></a>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
         жизни?
         <a class="header__link" href="#">Узнать →</a>
       </p>
-      <div class="header__main-illustration"></div>
+      <img class="header__main-illustration" src="./images/header-image.png" alt="Фёдор Павлович Решетников. Картина Опять двойка">
       <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
       <section class="description">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief"> Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать
@@ -35,7 +35,7 @@
               сделать его эффективным и
               захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
           </div>
-        </div>
+        </article>
       </section>
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
@@ -84,7 +84,7 @@
         </div>
       </section>
       <section class="oakley">
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">С детства Барбаре не давалась математика. Она считала себя законченным
@@ -93,13 +93,14 @@
               тогда Барбара придумала свой подход к точным наукам. Оказалось, если вам что-то «плохо даётся», ваши
               добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.</p>
           </div>
-        </div>
+        </article>
       </section>
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a class="feynman__link" href="https://habr.com/ru/company/getmeit/blog/646085/">Подробнее →</a>
-        <img class="feynman__background" alt="Ричард Фейнман" src="./images/feynman.png">
+        <a class="feynman__link" href="https://habr.com/ru/company/getmeit/blog/646085/" target="_blank">Подробнее →</a>
+        <div class="feynman__background"></div>
+        <!-- <img class="feynman__background" alt="Ричард Фейнман" src="./images/feynman.png"> -->
       </section>
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
@@ -151,17 +152,14 @@
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюссер</p>
           <div class="khan__book-container">
-            <!-- <img src="/images/khan-book.jpg" alt="Обложка книги. Название: Весь мир - школа. Автор: Салман Хан" class="khan__book-pic"> -->
-            <a href="https://www.labirint.ru/books/483575/">
-              <div class="khan__book-pic"></div>
-            </a>
-            <a href="https://www.labirint.ru/books/483575/" class="khan__buy-link">Купить книгу →</a>
+            <img src="/images/khan-book.jpg" alt="Обложка книги. Название: Весь мир - школа. Автор: Салман Хан" class="khan__book-pic">
+            <a href="https://www.labirint.ru/books/483575/" class="khan__buy-link" target="_blank">Купить книгу →</a>
           </div>
         </div>
       </section>
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
-        <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
+        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h4 class="table__heading table__heading_theme_dark">1</h4>
@@ -210,42 +208,42 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <a href="https://arzamas.academy/" class="resources__link"><img src="./images/logo/resources-arzamas.svg"
-              alt="Арзамас логотип" class="resources__logo"></a>
-          <a href="https://nplus1.ru/" class="resources__link"><img src="./images/logo/resources-n1.svg" alt="Наука плюс один логотип"
-              class="resources__logo"></a>
-          <a href="#" class="resources__link"><img src="./images/logo/resources-strelka.svg" alt="Стрелка логотип"
-              class="resources__logo"></a>
-          <a href="https://polka.academy/" class="resources__link"><img src="./images/logo/resources-polka.svg"
-              alt="ПОЛКА" class="resources__logo"></a>
-        </div>
+        <ul class="resources__logo-zone">
+          <li><a href="https://arzamas.academy/" class="resources__link" target="_blank"><img src="./images/logo/resources-arzamas.svg"
+              alt="Арзамас логотип" class="resources__logo"></a></li>
+          <li><a href="https://nplus1.ru/" class="resources__link" target="_blank"><img src="./images/logo/resources-n1.svg" alt="Наука плюс один логотип"
+              class="resources__logo"></a></li>
+          <li><a href="#" class="resources__link" target="_blank"><img src="./images/logo/resources-strelka.svg" alt="Стрелка логотип"
+              class="resources__logo"></a></li>
+          <li><a href="https://polka.academy/" class="resources__link" target="_blank"><img src="./images/logo/resources-polka.svg"
+              alt="ПОЛКА" class="resources__logo"></a></li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <a href="https://practicum.yandex.ru" class="logo logo_place_footer"></a>
+          <a href="https://practicum.yandex.ru" class="logo logo_place_footer" target="_blank"></a>
           <p class="footer__author">&copy; Даниил Боровов</p>
         </div>
         <nav class="footer__column footer__column_content_info">
-          <div class="footer__column-heading">О практикуме</div>
-          <div class="footer__column-links">
-            <a class="footer__column-link" href="#">Главная</a>
-            <a class="footer__column-link" href="#">Концепция</a>
-            <a class="footer__column-link" href="#">Наставники</a>
-          </div>
+          <h2 class="footer__column-heading">О практикуме</h2>
+          <ul class="footer__column-links">
+            <li><a class="footer__column-link" href="#">Главная</a></li>
+            <li><a class="footer__column-link" href="#">Концепция</a></li>
+            <li><a class="footer__column-link" href="#">Наставники</a></li>
+          </ul>
         </nav>
         <nav class="footer__column footer__column_content_social">
-          <div class="footer__column-heading">Соцсети</div>
-          <div class="footer__column-links">
-            <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/youtube-icon.svg"
-                alt="Логотип YouTube">YouTube</a>
-            <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/vk_color_white.svg"
-                alt="Логотип ВКонтакте">ВКонтакте</a>
-            <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/tiktok-icon.svg"
-                alt="Логотип TikTok">TikTok</a>
-          </div>
+          <h2 class="footer__column-heading">Соцсети</h2>
+          <ul class="footer__column-links">
+            <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/youtube-icon.svg"
+                alt="Логотип YouTube">YouTube</a></li>
+            <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/vk_color_white.svg"
+                alt="Логотип ВКонтакте">ВКонтакте</a></li>
+            <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/tiktok-icon.svg"
+                alt="Логотип TikTok">TikTok</a></li>
+          </ul>
         </nav>
       </div>
     </footer>
