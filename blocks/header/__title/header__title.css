@@ -7,6 +7,5 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  left: 64px;
-  z-index: 2;
+  margin-left: 64px;
 }

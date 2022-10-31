@@ -1,3 +1,8 @@
 .resources__link {
-  
+  transition: transform .2s linear;
+}
+
+.resources__link:hover {
+  transform: scale(1.1);
+  /* opacity: 60%; */
 }
